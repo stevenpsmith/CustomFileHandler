@@ -7,6 +7,7 @@
 //
 
 #import "CSMAppDelegate.h"
+#import "CSMViewController.h"
 
 @implementation CSMAppDelegate
 
@@ -41,6 +42,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if (url){
+        NSString *str = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+        //this is not the way to display this on the screen
+        [[(CSMViewController *)[[self window] rootViewController] lblFileContents] setText:str];
+        NSLog(@"The file contained: %@",str);
+    }
+    return YES;
 }
 
 @end

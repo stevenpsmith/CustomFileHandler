@@ -18,6 +18,7 @@
 		3EB82B4016D5441700F8A4A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB82B3F16D5441700F8A4A2 /* Default-568h@2x.png */; };
 		3EB82B4316D5441700F8A4A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB82B4116D5441700F8A4A2 /* MainStoryboard.storyboard */; };
 		3EB82B4616D5441700F8A4A2 /* CSMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB82B4516D5441700F8A4A2 /* CSMViewController.m */; };
+		3EB82B4D16D55E8300F8A4A2 /* horse_head.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB82B4C16D55E8300F8A4A2 /* horse_head.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3EB82B4216D5441700F8A4A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3EB82B4416D5441700F8A4A2 /* CSMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMViewController.h; sourceTree = "<group>"; };
 		3EB82B4516D5441700F8A4A2 /* CSMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMViewController.m; sourceTree = "<group>"; };
+		3EB82B4C16D55E8300F8A4A2 /* horse_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse_head.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		3EB82B2F16D5441700F8A4A2 /* CustomUTIHandler */ = {
 			isa = PBXGroup;
 			children = (
+				3EB82B4C16D55E8300F8A4A2 /* horse_head.png */,
 				3EB82B3816D5441700F8A4A2 /* CSMAppDelegate.h */,
 				3EB82B3916D5441700F8A4A2 /* CSMAppDelegate.m */,
 				3EB82B4116D5441700F8A4A2 /* MainStoryboard.storyboard */,
@@ -164,6 +167,7 @@
 				3EB82B3E16D5441700F8A4A2 /* Default@2x.png in Resources */,
 				3EB82B4016D5441700F8A4A2 /* Default-568h@2x.png in Resources */,
 				3EB82B4316D5441700F8A4A2 /* MainStoryboard.storyboard in Resources */,
+				3EB82B4D16D55E8300F8A4A2 /* horse_head.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +267,12 @@
 		3EB82B4A16D5441700F8A4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Smith (SDKEB83WF2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomUTIHandler/CustomUTIHandler-Prefix.pch";
 				INFOPLIST_FILE = "CustomUTIHandler/CustomUTIHandler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CB745327-E603-43A3-98E4-42B92E34B799";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,10 +280,12 @@
 		3EB82B4B16D5441700F8A4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Smith (SDKEB83WF2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomUTIHandler/CustomUTIHandler-Prefix.pch";
 				INFOPLIST_FILE = "CustomUTIHandler/CustomUTIHandler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CB745327-E603-43A3-98E4-42B92E34B799";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

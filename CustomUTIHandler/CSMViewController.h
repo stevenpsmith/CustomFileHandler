@@ -10,4 +10,6 @@
 
 @interface CSMViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblFileContents;
+
 @end
